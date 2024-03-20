@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Purpose is a unique and beautiful collection of UI elements that are all flexible and modular. A complete and customizable solution to building the website of your dreams.">
+  <meta name="author" content="Webpixels">
+  <title>Application Programming Interface</title>
+
+  <link rel="stylesheet" href="{% static 'startapp/css/all.min.css' %}"><!-- Page CSS -->
+  <link rel="stylesheet" href="{% static 'startapp/css/swiper.min.css' %}">
+  <!-- Purpose CSS -->
+  <link rel="stylesheet" href="{% static 'startapp/css/purpose.css' %}" id="stylesheet">
+</head>
+
+<body>
+  <div class="main-content bg-section-secondary" style="margin-top: 100px;">
+    <section id="sct-page-examples" class="slice bg-section-secondary">
+      <h2 class="text-center mb-5">API</h2>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-sm-6">
+            <a href="{% url 'products_api:api-root' %}">
+              <div class="card text-center hover-shadow-lg hover-translate-y-n10">
+                <div class="px-2 py-4">
+                </div>
+                <div class="px-4 pb-5">
+                  <h5>API</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-sm-6">
+            <a href="{% url 'products_api:products-category' %}">
+              <div class="card text-center hover-shadow-lg hover-translate-y-n10">
+                <div class="px-2 py-4">
+                </div>
+                <div class="px-4 pb-5">
+                  <h5>API CATEGORY</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-sm-6">
+            <a href="{% url 'products_api:products-list' %}">
+              <div class="card text-center hover-shadow-lg hover-translate-y-n10">
+                <div class="px-2 py-4">
+                </div>
+                <div class="px-4 pb-5">
+                  <h5>API PRODUCTS</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-sm-6">
+            <a href="/api/auth/users/">
+              <div class="card text-center hover-shadow-lg hover-translate-y-n10">
+                <div class="px-2 py-4">
+                </div>
+                <div class="px-4 pb-5">
+                  <h5>API USERS</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="fluid-paragraph text-center mt-5">
+        <p>
+          <strong class="text-primary">@tab1kkz</strong> You can find me on telegram)
+        </p>
+      </div>
+    </section>
+
+  <script src="{% static 'startapp/js/purpose.core.js' %}"></script>
+  <!-- Page JS -->
+  <script src="{% static 'startapp/js/swiper.min.js' %}"></script>
+  <!-- Purpose JS -->
+  <script src="{% static 'startapp/js/purpose.js' %}"></script>
+  <!-- Demo JS - remove it when starting your project -->
+  <script src="{% static 'startapp/js/demo.js' %}"></script>
+
+
+</body>
+</html>
